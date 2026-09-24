@@ -266,6 +266,10 @@ Swagger UI is available at:
 http://127.0.0.1:8000/docs
 ```
 
+### API Documentation
+
+![FastAPI Swagger UI](docs/swagger-ui.svg)
+
 Run the API locally with:
 
 ```bash
