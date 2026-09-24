@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720">
+<rect width="1200" height="720" fill="#fff"/>
+<rect width="1200" height="42" fill="#333"/>
+<circle cx="22" cy="21" r="7" fill="#777"/><circle cx="47" cy="21" r="7" fill="#777"/><circle cx="72" cy="21" r="7" fill="#777"/>
+<rect x="190" y="8" width="720" height="27" rx="5" fill="#222"/>
+<text x="550" y="27" text-anchor="middle" font-family="Arial" font-size="13" fill="#ddd">127.0.0.1:8000/docs</text>
+<text x="95" y="105" font-family="Arial" font-size="30" font-weight="700" fill="#34495e">Customer Churn Prediction API</text>
+<rect x="645" y="83" width="44" height="28" rx="12" fill="#8c98a8"/><text x="667" y="102" text-anchor="middle" font-family="Arial" font-size="13" font-weight="700" fill="#fff">1.0</text>
+<rect x="697" y="83" width="55" height="28" rx="12" fill="#72bd00"/><text x="724" y="102" text-anchor="middle" font-family="Arial" font-size="12" font-weight="700" fill="#fff">OAS 3.1</text>
+<text x="95" y="130" font-family="Arial" font-size="12" fill="#4285d4">/openapi.json</text>
+<text x="95" y="165" font-family="Arial" font-size="15" fill="#333">Telecom customer churn prediction service</text>
+<text x="100" y="225" font-family="Arial" font-size="20" font-weight="700" fill="#333">default</text>
+<rect x="95" y="242" width="1010" height="48" rx="4" fill="#f8fbff" stroke="#b8cce5"/>
+<rect x="99" y="246" width="75" height="40" rx="3" fill="#58aef0"/><text x="137" y="271" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#fff">GET</text>
+<text x="190" y="272" font-family="Arial" font-size="17" font-weight="700" fill="#333">/health</text><text x="275" y="272" font-family="Arial" font-size="13" fill="#555">Health Check</text>
+<text x="1080" y="272" font-family="Arial" font-size="20" fill="#555">⌄</text>
+<rect x="95" y="305" width="1010" height="48" rx="4" fill="#f4fff7" stroke="#b7dfc5"/>
+<rect x="99" y="309" width="75" height="40" rx="3" fill="#48c78e"/><text x="137" y="334" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#fff">POST</text>
+<text x="190" y="335" font-family="Arial" font-size="17" font-weight="700" fill="#333">/predict</text><text x="275" y="335" font-family="Arial" font-size="13" fill="#555">Predict</text>
+<text x="1080" y="335" font-family="Arial" font-size="20" fill="#555">⌄</text>
+<rect x="95" y="395" width="1010" height="205" rx="5" fill="#fff" stroke="#ccc"/>
+<text x="110" y="425" font-family="Arial" font-size="18" font-weight="700" fill="#444">Schemas</text>
+<rect x="110" y="445" width="980" height="42" rx="5" fill="#f2f2f2"/>
+<text x="130" y="471" font-family="Arial" font-size="15" font-weight="700" fill="#444">CustomerData</text><text x="235" y="471" font-family="Arial" font-size="13" fill="#888">› Expand all</text><text x="325" y="471" font-family="Arial" font-size="13" fill="#4285d4">object</text>
+<rect x="110" y="498" width="980" height="42" rx="5" fill="#f2f2f2"/>
+<text x="130" y="524" font-family="Arial" font-size="15" font-weight="700" fill="#444">HTTPValidationError</text><text x="280" y="524" font-family="Arial" font-size="13" fill="#888">› Expand all</text><text x="370" y="524" font-family="Arial" font-size="13" fill="#4285d4">object</text>
+<rect x="110" y="551" width="980" height="42" rx="5" fill="#f2f2f2"/>
+<text x="130" y="577" font-family="Arial" font-size="15" font-weight="700" fill="#444">ValidationError</text><text x="250" y="577" font-family="Arial" font-size="13" fill="#888">› Expand all</text><text x="340" y="577" font-family="Arial" font-size="13" fill="#4285d4">object</text>
+</svg>
