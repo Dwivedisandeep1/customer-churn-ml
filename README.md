@@ -34,20 +34,9 @@ The risk bands are business rules implemented by the application; they are not a
 
 ## Architecture
 
-```mermaid
-flowchart LR
-    A[IBM Telco Churn Dataset] --> B[Cleaning & EDA]
-    B --> C[Feature Engineering]
-    C --> D[Scikit-learn Preprocessing Pipeline]
-    D --> E[Model Comparison]
-    E --> F[XGBoost Tuning]
-    F --> G[Threshold Optimization]
-    G --> H[Saved Joblib Model]
-    H --> I[FastAPI /predict]
-    I --> J[Client / Dashboard]
-    H --> K[Automated Pytest Tests]
-    F --> L[SHAP Explainability]
-```
+![Project architecture](docs/architecture.svg)
+
+The architecture diagram shows the path from raw telecom data through feature engineering and model training to the serialized model, FastAPI inference layer, SHAP explainability, and automated tests.
 
 ---
 
@@ -177,6 +166,8 @@ At the final threshold of **0.60**:
 
 ### Confusion Matrix
 
+![Final test confusion matrix](docs/confusion-matrix.svg)
+
 | | Predicted No Churn | Predicted Churn |
 |---|---:|---:|
 | Actual No Churn | 837 | 198 |
@@ -196,6 +187,8 @@ This corresponds to:
 SHAP was used to explain how individual features influenced model predictions.
 
 The most influential features included:
+
+![SHAP feature ranking](docs/shap-feature-ranking.svg)
 
 1. Contract — Month-to-month
 2. tenure
@@ -315,6 +308,10 @@ customer-churn-ml/
 │   ├── customer_churn_model.joblib
 │   └── churn_threshold.joblib
 ├── notebooks/
+├── docs/
+│   ├── architecture.svg
+│   ├── confusion-matrix.svg
+│   └── shap-feature-ranking.svg
 ├── src/
 │   ├── __init__.py
 │   └── feature_engineering.py
@@ -383,7 +380,7 @@ pytest -q
 
 ## Future Improvements
 
-- Add CI with GitHub Actions
+- Expand CI with linting and type checks
 - Add data and model versioning
 - Add a monitoring layer for production drift
 - Add a lightweight frontend/dashboard
