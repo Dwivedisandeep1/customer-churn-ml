@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="620" viewBox="0 0 1200 620">
+  <rect width="1200" height="620" fill="#ffffff"/>
+  <text x="600" y="45" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#222">Telecom Customer Churn ML — Production Architecture</text>
+
+  <g font-family="Arial, sans-serif" font-size="16" text-anchor="middle">
+    <rect x="55" y="95" width="180" height="70" rx="12" fill="#eef4ff" stroke="#4472c4" stroke-width="2"/>
+    <text x="145" y="125" font-weight="700" fill="#222">IBM Telco</text><text x="145" y="148" fill="#333">Churn Dataset</text>
+
+    <rect x="285" y="95" width="180" height="70" rx="12" fill="#eef4ff" stroke="#4472c4" stroke-width="2"/>
+    <text x="375" y="125" font-weight="700" fill="#222">Cleaning &amp;</text><text x="375" y="148" fill="#333">EDA</text>
+
+    <rect x="515" y="95" width="180" height="70" rx="12" fill="#eef4ff" stroke="#4472c4" stroke-width="2"/>
+    <text x="605" y="125" font-weight="700" fill="#222">Feature</text><text x="605" y="148" fill="#333">Engineering</text>
+
+    <rect x="745" y="95" width="180" height="70" rx="12" fill="#eef4ff" stroke="#4472c4" stroke-width="2"/>
+    <text x="835" y="125" font-weight="700" fill="#222">Preprocessing</text><text x="835" y="148" fill="#333">Pipeline</text>
+
+    <rect x="975" y="95" width="170" height="70" rx="12" fill="#eaf7ee" stroke="#3a8f5b" stroke-width="2"/>
+    <text x="1060" y="125" font-weight="700" fill="#222">Tuned</text><text x="1060" y="148" fill="#333">XGBoost</text>
+
+    <rect x="385" y="270" width="190" height="75" rx="12" fill="#fff5df" stroke="#c98b2e" stroke-width="2"/>
+    <text x="480" y="301" font-weight="700" fill="#222">Threshold</text><text x="480" y="326" fill="#333">0.60</text>
+
+    <rect x="635" y="270" width="190" height="75" rx="12" fill="#f5edff" stroke="#8055aa" stroke-width="2"/>
+    <text x="730" y="301" font-weight="700" fill="#222">SHAP</text><text x="730" y="326" fill="#333">Explainability</text>
+
+    <rect x="385" y="435" width="190" height="75" rx="12" fill="#eef4ff" stroke="#4472c4" stroke-width="2"/>
+    <text x="480" y="466" font-weight="700" fill="#222">Joblib</text><text x="480" y="491" fill="#333">Model Artifacts</text>
+
+    <rect x="635" y="435" width="190" height="75" rx="12" fill="#eaf7ee" stroke="#3a8f5b" stroke-width="2"/>
+    <text x="730" y="466" font-weight="700" fill="#222">FastAPI</text><text x="730" y="491" fill="#333">/health + /predict</text>
+
+    <rect x="895" y="435" width="190" height="75" rx="12" fill="#f8f8f8" stroke="#666" stroke-width="2"/>
+    <text x="990" y="466" font-weight="700" fill="#222">Pytest</text><text x="990" y="491" fill="#333">3 API tests</text>
+  </g>
+
+  <g stroke="#555" stroke-width="2.5" fill="none" marker-end="url(#arrow)">
+    <path d="M235 130 H285"/><path d="M465 130 H515"/><path d="M695 130 H745"/><path d="M925 130 H975"/>
+    <path d="M1060 165 V220 H480 V270"/>
+    <path d="M1060 165 V220 H730 V270"/>
+    <path d="M480 345 V435"/>
+    <path d="M480 472 H635"/>
+    <path d="M730 345 V405 H730 V435"/>
+    <path d="M825 472 H895"/>
+  </g>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#555"/>
+    </marker>
+  </defs>
+  <text x="600" y="570" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#666">Validation-based threshold selection • Frozen test evaluation • Reusable production feature engineering</text>
+</svg>
